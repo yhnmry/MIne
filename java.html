@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible"
+    content="IE=edge">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Javascript episode 2</title>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <p id="result"></p>
+    <p id="result2"></p>
+  </body>
+</html>
+
+<script>
+    var number = 7;
+
+    if(number == 7){  //it is true since 7 == 7 is equals.//
+         document.getElementById("result").innerHTML = "True";
+    }else{
+        document.getElementById("result").innerHTML = "False";
+    }
+</script>
+<script>
+    var num = window.prompt("Enter your age.");
+
+    if(num <= 17){     
+        document.getElementById("result").innerHTML = "Your age " +  num  + " is not applicable.";    
+    }else if(num >= 50){ // it is not applicable since num is >=50.//
+        document.getElementById("result").innerHTML = "Your age " + num + " is not applicable."; 
+    }else if(num >= 18){ // it is applicable since num is >=18.//
+        document.getElementById("result").innerHTML = "Your age " + num + " is applicable.";
+    }
+</script>
+<script>
+
+    var choice = window.prompt("Why are you here? \n A. To get a job. \n B. To communicate. \n C. To help other people. \n D. To get more about you.");
+
+    switch(choice){
+          case "A":
+            document.getElementById("result2").innerHTML = "Then I order you to have the requirements needed. ";
+           break;
+          case 'B':
+            document.getElementById("result2").innerHTML = "Then I owe you to have independence but include a plot in our story.";
+           break;
+          case 'C':
+            document.getElementById("result2").innerHTML = "Then you're in the right path. The mist might clear afterwards.";
+           break;
+          case 'D':
+            document.getElementById("result2").innerHTML =  "Then, gain knowledge and invest money.";
+           break;
+          default:
+            document.getElementById("result2").innerHTML = "Please enter the letter that is available on the list.";
+    }
+      
+</script>
